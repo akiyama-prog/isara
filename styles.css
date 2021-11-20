@@ -157,8 +157,8 @@
 
 .wrapper img {
     position: absolute;
-    top: -170px;
-    right: 80px;
+    top: -180px;
+    right: 25%;
 }
 
 .introduce {
@@ -188,7 +188,7 @@
     background-color: #f7c23c;
     color: white;
     text-align: center;
-} 
+}
 
 .qna p {
     vertical-align: middle;
@@ -563,7 +563,7 @@
     background-color: #f7c23c;
     font-weight: bold;
     padding-bottom: 5%;
-   
+
 }
 #form {
     padding-top: 10%;
