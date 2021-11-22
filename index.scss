@@ -143,10 +143,14 @@ main{
         font-weight: lighter;
         letter-spacing: 2px;
         color: rgb(78, 74, 74);
+        font-size: 16px;
     }
     h2 {
         padding:30px;
         position: relative;
+        margin: 0 auto;
+        width: 860px;
+        font-size: 24px;
         &::before, &::after {
             content:'';
             width: 40px;
@@ -163,13 +167,13 @@ main{
             border-left: solid 4px $mainCulor;
             border-top: solid 4px $mainCulor;
             top: 0;
-            left: 15%;
+            left: 0;
         }
         &::after {
             border-right: solid 4px $mainCulor;
             border-bottom: solid 4px $mainCulor;
             bottom: 0;
-            right: 15%;
+            right: 0;
         }
     }
     strong {

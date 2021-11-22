@@ -176,11 +176,15 @@ main {
   font-weight: lighter;
   letter-spacing: 2px;
   color: #4e4a4a;
+  font-size: 16px;
 }
 
 .introduction h2 {
   padding: 30px;
   position: relative;
+  margin: 0 auto;
+  width: 860px;
+  font-size: 24px;
 }
 
 .introduction h2::before, .introduction h2::after {
@@ -201,14 +205,14 @@ main {
   border-left: solid 4px #f7c23c;
   border-top: solid 4px #f7c23c;
   top: 0;
-  left: 15%;
+  left: 0;
 }
 
 .introduction h2::after {
   border-right: solid 4px #f7c23c;
   border-bottom: solid 4px #f7c23c;
   bottom: 0;
-  right: 15%;
+  right: 0;
 }
 
 .introduction strong {
