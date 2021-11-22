@@ -325,3 +325,63 @@ main{
         font-size: 18px;
     }
 }
+
+//Q&A
+
+.q {
+    background-color: #f7c23c;
+    color: white;
+    text-align: center;
+}
+
+.qna p {
+    vertical-align: middle;
+    color: #f7c23c;
+    display: table-cell;
+}
+
+.qna {
+    border-radius: 50%;
+    background-color: white;
+    display: table;
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+}
+
+.q {
+    padding-top: 30px;
+    position: relative;
+    h2{
+        padding: 30px 0;
+        margin-bottom: 0;
+        font-size: 18px;
+        &::before, &::after{
+            border-left: solid 4px white;
+            border-top: solid 4px white;
+        }
+        &::before{
+            top: 0;
+            left: 15%;
+        }
+        &::after{
+            bottom: 0;
+            right: 15%;
+        }
+        br{
+            display: block;
+            content: "";
+            margin: 20px 0;
+        }
+    }
+}
+
+.q:after {
+    content: '';
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #f7c23c;
+    position: absolute;
+    left: 50%;
+    margin-left:-30px;
+}

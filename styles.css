@@ -187,60 +187,6 @@
     padding-bottom: 30px;
 }
 
-.q {
-    background-color: #f7c23c;
-    color: white;
-    text-align: center;
-}
-
-.qna p {
-    vertical-align: middle;
-    color: #f7c23c;
-    display: table-cell;
-}
-
-.qna {
-    border-radius: 50%;
-    background-color: white;
-    display: table;
-    height: 80px;
-    width: 80px;
-    margin: 0 auto;
-}
-
-.q {
-    padding-top: 30px;
-    position: relative;
-}
-
-.q h2::before {
-    border-left: solid 4px white;
-    border-top: solid 4px white;
-    top: 30%;
-    left: 30%;
-}
-.q h2::after {
-    border-right: solid 4px white;
-    border-bottom: solid 4px white;
-    bottom: 0;
-    right: 15%;
-}
-
-.q h2 {
-    padding-bottom: 30px;
-    margin-bottom: 0;
-}
-
-.q:after {
-    content: '';
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-top: 30px solid #f7c23c;
-    position: absolute;
-    left: 50%;
-    margin-left:-30px;
-}
-
 /* 提携会社 */
 .voices {
     margin-top: 50px;
