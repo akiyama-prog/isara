@@ -79,6 +79,8 @@
 .merit h3 , .add h2{
     color: #f7c23c;
     margin: 5px;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .merit > .section > p {
@@ -113,6 +115,11 @@
 
 .add h2 {
     margin-top: 50px;
+}
+.add h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0;
 }
 .add > p {
     padding-bottom: 50px;
