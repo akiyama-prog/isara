@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
 }
@@ -395,19 +396,214 @@ main {
   font-size: 18px;
 }
 
+/* 学べること */
+.learn {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.learn p {
+  padding: 30px;
+}
+
+.learn p:first-of-type {
+  font-size: 20px;
+  font-weight: 30;
+}
+
+.learn p:last-of-type {
+  font-weight: bold;
+}
+
+.learn .learn-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.learn .learn-img img {
+  width: 13%;
+  height: 13%;
+  margin-right: 3%;
+}
+
+.learn .learn-img img:last-of-type {
+  margin-right: 0;
+}
+
+.learn span {
+  font-size: 15px;
+}
+
+.merits {
+  background-color: #fef5e0;
+  position: relative;
+}
+
+.merits .merits_title {
+  text-align: center;
+  padding: 50px;
+  position: relative;
+  padding: 5%;
+}
+
+.merits .merits_title h2 {
+  margin-top: 0;
+}
+
+.merits .merits_title::before, .merits .merits_title::after {
+  content: '';
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+.merits .merits_title::before {
+  border-left: solid 4px #f7c23c;
+  border-top: solid 4px #f7c23c;
+  top: 20%;
+  left: 15%;
+}
+
+.merits .merits_title::after {
+  border-right: solid 4px #f7c23c;
+  border-bottom: solid 4px #f7c23c;
+  bottom: 20%;
+  right: 15%;
+}
+
+.merits .merit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.merits .merit > .section > p {
+  font-size: 15px;
+  margin: 5px;
+  text-align: left;
+  color: #3f3c3c;
+  font-size: 300;
+}
+
+.merits .merit > .section {
+  width: calc((100%-50px)/3);
+  margin-right: 25px;
+}
+
+.merits .merit > .section:last-of-type {
+  margin-right: 0;
+}
+
+.merits .merit .section img {
+  width: 100%;
+  height: 40%;
+}
+
+.merits .add {
+  border: solid 2px #f7c23c;
+  border-radius: 5px;
+  background: white;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.merits .add h2 {
+  margin-top: 50px;
+}
+
+.merits .add h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.merits .add > p {
+  padding-bottom: 50px;
+}
+
+.merits > p:last-of-type {
+  text-align: center;
+  font-size: 0.8em;
+  color: #3f3c3c;
+  padding: 30px;
+  margin-bottom: 0;
+}
+
+.merit h3, .add h2 {
+  color: #f7c23c;
+  margin: 5px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.member {
+  background-image: url(img/member_bg.jpeg);
+  top: 0;
+  left: 50%;
+  color: white;
+  text-align: center;
+  background-size: cover;
+  background-position: left;
+}
+
+.member h2 {
+  padding-top: 80px;
+  margin-top: 0;
+}
+
+.member .members {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+}
+
+.member .members p:last-of-type {
+  text-align: left;
+}
+
+.member .members .wrapper img {
+  position: absolute;
+  top: -180px;
+  right: 25%;
+  border-radius: 50%;
+}
+
+.member .members .wrapper .relative {
+  position: relative;
+  margin-top: 200px;
+}
+
+.member .members .wrapper .relative .introduce {
+  border: solid 3px white;
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.member .members .wrapper:last-of-type {
+  padding-bottom: 30px;
+}
+
 .q {
+  padding-top: 30px;
+  position: relative;
   background-color: #f7c23c;
   color: white;
   text-align: center;
 }
 
-.qna p {
-  vertical-align: middle;
-  color: #f7c23c;
-  display: table-cell;
-}
-
-.qna {
+.q .qna {
   border-radius: 50%;
   background-color: white;
   display: table;
@@ -416,9 +612,10 @@ main {
   margin: 0 auto;
 }
 
-.q {
-  padding-top: 30px;
-  position: relative;
+.q .qna p {
+  vertical-align: middle;
+  color: #f7c23c;
+  display: table-cell;
 }
 
 .q h2 {
@@ -456,5 +653,540 @@ main {
   position: absolute;
   left: 50%;
   margin-left: -30px;
+}
+
+/* 提携会社 */
+.voices {
+  margin-top: 50px;
+}
+
+.voices p {
+  color: #3f3c3c;
+}
+
+.voices p:nth-child(3) {
+  font-size: 0.8em;
+}
+
+.voices .voice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 60%;
+  margin: 30px auto;
+}
+
+.voices .voice img {
+  border: 3px solid #f7c23c;
+  width: 200px;
+  height: 200px;
+}
+
+.voices .voice .comment {
+  width: 60%;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.voices .voice .comment > p {
+  color: #918d8d;
+}
+
+.voices .voice .comment .company {
+  border-bottom: 1px solid #918d8d;
+  display: inline-block;
+  margin-top: 0;
+}
+
+/* イサラで学べる内容 */
+.study {
+  background-image: url(img/study_bg.jpeg);
+  background-size: cover;
+}
+
+.study h2, .study > p, .study .card-header {
+  color: white;
+}
+
+.study h2 {
+  font-size: 30px;
+  padding-top: 50px;
+}
+
+.study p {
+  padding-bottom: 30px;
+}
+
+.study .case {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.study .case .card {
+  border: solid 2px #016ea9;
+  border-radius: 5px;
+  width: 390px;
+  margin: 0;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+.study .case .card h2 {
+  background-color: #016ea9;
+  padding: 20px;
+}
+
+.study .case .card:last-of-type {
+  margin-bottom: 300px;
+}
+
+.study .case .card .card-header {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.study .case .card .c-body {
+  padding: 0;
+}
+
+.study .case .card .c-body p {
+  border-bottom: dotted 1px #918d8d;
+  margin-top: 16px;
+  padding-bottom: 16px;
+}
+
+.study .case .card .c-body p:last-of-type {
+  margin-top: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.support {
+  background-color: #016ea9;
+  color: white;
+  padding: 1.5em 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* 受講の流れ */
+.flow {
+  padding: 4em 0;
+}
+
+.flow img:first-child {
+  margin: 5% 0;
+}
+
+.flow .describe {
+  background-color: #fef5e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+  padding: 3%;
+  width: 90%;
+}
+
+.flow .describe .right-session {
+  text-align: left;
+  width: 80%;
+}
+
+.flow .describe .right-session small {
+  padding-top: 2em;
+  display: inline-block;
+}
+
+.flow .describe .right-session p:first-of-type, .flow .describe .right-session p:nth-child(3) {
+  font-weight: bold;
+}
+
+.flow .describe .right-session p:last-of-type {
+  margin-bottom: 0;
+}
+
+.flow .describe .left-session p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+/* なぜバンコク */
+.why {
+  background-image: url("img/temple.jpeg");
+  background-size: cover;
+  position: relative;
+  height: 500px;
+  padding: 10%;
+  text-align: left;
+  color: white;
+  width: 100%;
+}
+
+.why::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(116, 224, 161, 0.5);
+}
+
+.why .why-content {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10%;
+}
+
+.why .why-content h4 {
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.why .why-content ul {
+  padding-left: 16px;
+}
+
+.why .why-content li {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.why .why-content p {
+  font-size: 14px;
+}
+
+/* 参加特典 */
+.benefit {
+  background-color: #f7c23c;
+  padding: 50px;
+}
+
+.benefit h2 {
+  margin: 30px 0;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.benefit > p {
+  margin-bottom: 100px;
+}
+
+.benefit p:first-of-type {
+  font-weight: 700;
+}
+
+.benefit .white {
+  color: white;
+}
+
+.benefit .relative {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.benefit .relative h2 {
+  width: 45%;
+  margin: 0 auto;
+  position: absolute;
+  top: -40px;
+  left: 30%;
+  background-color: #f7c23c;
+}
+
+.benefit .relative .benefits {
+  border: solid 2px white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.benefit .relative .benefits .three-benefits {
+  background-color: white;
+  border-radius: 50%;
+  margin: 40px auto;
+}
+
+.benefit .relative .benefits .three-benefits p:first-of-type {
+  color: #f7c23c;
+  font-size: 28px;
+  font-weight: 100;
+}
+
+.benefit .relative .benefits .three-benefits .circle {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.benefit .relative .benefits .three-benefits .circle .circle-inner {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* 最大の価値 */
+.no-volunteer {
+  background-image: url("img/volunteer.jpeg");
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.no-volunteer .no-volunteer-inner {
+  padding: 70px 0;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-weight: 600;
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.no-volunteer .no-volunteer-inner > p {
+  margin: 30px 0;
+  font-size: 20px;
+}
+
+.no-volunteer .second::before {
+  border-left: solid 4px white;
+  border-top: solid 4px white;
+  top: 47%;
+  left: 15%;
+}
+
+.no-volunteer .second::after {
+  border-right: solid 4px white;
+  border-bottom: solid 4px white;
+  bottom: 37%;
+  right: 15%;
+}
+
+.no-volunteer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.no-volunteer .second::before, .no-volunteer .second::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+
+/* 創業者からのメッセージ */
+.message {
+  margin: 70px 0;
+  width: 70%;
+  margin: 80px auto;
+  font-weight: bold;
+}
+
+.message > p {
+  margin: 50px 0;
+  font-size: 18px;
+}
+
+.message .message-contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.message .message-contain p {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.message .message-contain img {
+  width: 20%;
+  height: 50%;
+  margin-right: 5%;
+}
+
+/* form */
+#form {
+  padding-top: 10%;
+  margin-top: 10%;
+}
+
+.form {
+  background-color: #f7c23c;
+  font-weight: bold;
+  padding-bottom: 5%;
+}
+
+.form .btn {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1em;
+}
+
+.form > form {
+  border-radius: 10%;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.form > form input[type='text'] {
+  margin: 15px 0;
+  height: 50px;
+}
+
+.form > form textarea {
+  height: 80px;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.form h2 {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* よくある質問 */
+.question {
+  margin: 5% 0;
+}
+
+.question h2 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.question .accbox {
+  margin: 2em auto;
+  padding: 0;
+  max-width: 80%;
+  /*最大幅*/
+  text-align: left;
+}
+
+.question .accbox label {
+  border: 1px solid #e5e5e5;
+  display: block;
+  margin: 1.5px 0;
+  padding: 13px 12px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 16px;
+}
+
+.question .accbox input {
+  display: none;
+}
+
+.question .accbox .icon-blue {
+  color: #3554df;
+}
+
+.question .accbox label:after {
+  content: "\f078";
+  font-family: 'Font Awesome 5 Free';
+  padding-right: 8px;
+  font-weight: 900;
+  display: inline-block;
+  color: #e5e5e5;
+  float: right;
+}
+
+.question .accbox label:hover {
+  border-bottom: 1px solid black;
+  padding: 0 auto;
+}
+
+.question .accbox .accshow {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.question .accbox .accshow p {
+  margin: 15px 10px;
+  font-weight: 600;
+}
+
+.question .accbox .cssacc:checked + label + .accshow {
+  height: auto;
+  padding: 5px;
+  opacity: 1;
+}
+
+.question .accbox .cssacc:checked + label:after {
+  content: "\f077";
+  font-family: 'Font Awesome 5 Free';
+  padding-right: 8px;
+  font-weight: 900;
+  display: inline-block;
+  color: #e5e5e5;
+  float: right;
+}
+
+footer {
+  background-color: #e5e5e5;
+  padding: 3% 0 2%;
+}
+
+footer small {
+  font-size: 10px;
+  font-weight: 200;
+}
+
+footer .share {
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=index.css.map */
